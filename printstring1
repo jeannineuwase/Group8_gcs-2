@@ -8,3 +8,4 @@ echo "five"
 # Create text file with strings on separate lines
 filename=$(date +"%Y-%m-%d-file.txt")
 echo -e "one\ntwo\nthree\nfour\nfive" > $filename
+echo "Script completed at $(date)"
