@@ -1,0 +1,14 @@
+#!/bin/bash
+
+read -p "Enter a directory path: " dir_path
+
+if [ -d "$dir_path" ]; then
+  echo "Files in $dir_path:"
+  ls "$dir_path"
+else
+  echo "$dir_path is not a directory. Please enter a valid directory path."
+  read -p "Enter a directory path: " dir_path
+
+  echo "Files in $dir_path:"
+  ls "$dir_path"
+fi
