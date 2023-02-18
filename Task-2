@@ -1,0 +1,14 @@
+#!/bin/bash
+#I am  a quick and indomptable
+A=$RANDOM
+B=$RANDOM
+echo "The first random number generated is $A"
+BA=$(echo "sqrt($A)" | bc)
+#echo "$BA"
+echo -n "The square root is "; echo "sqrt($A)" | bc
+echo "The second random number generated is $B"
+echo -n "The square root is "; echo "sqrt($B)" | bc
+BB=$(echo "sqrt($B)" | bc)
+#echo "$BB"
+JE=$(($BA+$BB))
+echo "The sum of their square roots is $JE"
