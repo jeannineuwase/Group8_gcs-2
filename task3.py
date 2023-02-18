@@ -1,6 +1,5 @@
 #! bin/bash
 echo "Enter a phrase"
-phrase = I am software enginneer.
 read $phrase
 count_words = $(echo $phrase | wc - c)
 whitespace = $(echo $phrase | tr -d -c ' ' | wc -c)
